@@ -1,0 +1,50 @@
+:root {
+  --max-width-content: 1200px;
+  --max-width-footer: 1440px;
+
+  --color-text: #111111;
+  --color-muted: #707072;
+  --color-background: #fff;
+  --color-footer: #111111;
+  --color-header: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+header {
+  background: rgba(var(--color-header));
+  padding: 0 38px;
+}
+
+/* Note-- you do not have to match Nike's custom footer font. Just use Helvetica Neue / Helvetica */
+footer {
+  background: rgba(var(--color-footer));
+  padding: 0 40px;
+}
+
+body {
+  color: rgba(var(--color-text));
+  background: rgba(var(--color-background));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Example Utilities */
+
+.flex {
+  display: flex;
+}
