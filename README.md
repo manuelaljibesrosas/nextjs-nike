@@ -6,7 +6,7 @@ This repository includes all of the assets and libraries that you'll need to com
 
 ## The Task
 
-In the `reference` folder, you will find 2 simplified screenshots from the Nike website. Your task is to recreate a products grid page and a product detail page using the seed data provided in `src/utils/seed-data.ts` and menus from `src/utils/menus.ts`. We chose to use Nike because its a clean and simple design that should make this task straightforward and attainable within 60 minutes.
+In the `reference` folder, you will find 2 simplified screenshots from the Nike website. Your task is to recreate a products grid page and a product detail page using the seed data provided in `src/utils/seed-data.ts` and menus from `src/utils/menus.ts`. We chose to use Nike because it's a clean and simple design that should make this task straightforward and attainable within 60 minutes.
 
 The majority of the site's content has already been set up for you, so your job is to focus on layout. You will also find some helpful CSS variables in `src/styles/global.css` that you may choose to use in your implementation.
 
@@ -22,7 +22,7 @@ You should ensure that your implementation is responsive and looks good on mobil
 
 For this exercise, please use CSS, SCSS, and/or CSS / SCSS modules (the `sass` library has already been installed for you if you choose to use it). Please refrain from styling with Tailwind or CSS-in-JS libraries as we do not use these tools at One of None.
 
-You are also free to add global styles and utility classes in the `styles` directory if it will help you complete the task more efficiently.
+You are also welcome to add global styles and utility classes in the `styles` directory if it will help you complete the task more efficiently.
 
 ## Setup Instructions
 
