@@ -97,10 +97,12 @@
 .favorites-bag {
   width: 24px;
   height: 24px;
+  outline: none;
 }
 .navigation-action-button {
   cursor: pointer;
   transition: background-color 120ms ease;
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,6 +110,7 @@
   height: 36px;
   border: none;
   border-radius: 50%;
+  color: var(--color-text);
   background-color: transparent;
 }
 .navigation-action-button:hover {
@@ -119,7 +122,6 @@
   gap: 98px;
   width: 320px;
   max-width: 100%;
-  height: 100%;
   padding: 40px 30px 150px 36px;
 }
 .mobile-drawer-main-menu {

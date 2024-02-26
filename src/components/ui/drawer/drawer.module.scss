@@ -9,11 +9,14 @@
   z-index: 50;
   position: fixed;
   right: 0px;
-  bottom: 0px;
-  height: auto;
+  top: 0px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: var(--color-background);
+}
+.drawer-content:focus {
+  outline: none;
 }
