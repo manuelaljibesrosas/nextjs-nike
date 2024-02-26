@@ -1,0 +1,102 @@
+.productDetailContainer {
+  display: flex;
+  justify-content: center;
+  padding: 48px 0;
+
+  .productDetailContent {
+    display: flex;
+    width: 100%;
+    max-width: 1088px;
+  }
+  .productDetailHeader {
+    display: none;
+  }
+  .productDetailData {
+    width: 456px;
+
+    .productDetailHeader {
+      display: flex;
+    }
+  }
+  .promotionsAndDiscounts {
+    text-align: center;
+    color: #707072;
+  }
+  .productDetailName {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-medium);
+    line-height: var(--leading-tight);
+    letter-spacing: 0.007em;
+  }
+  .productDetailCategory {
+    font-size: var(--text-base);
+    font-weight: var(--font-medium);
+    line-height: var(--leading-normal);
+  }
+  .shippingNotice {
+    a {
+      text-decoration: underline;
+    }
+    .shippingNoticeSeparator {
+      background-color: #e5e5e5;
+    }
+    .shippingNoticeCollapsibleIcon {
+      transition: transform 120ms ease;
+      pointer-events: none;
+      transform: rotate(135deg);
+      width: 10px;
+      height: 10px;
+      stroke: var(--color-text);
+      stroke-width: 15px;
+    }
+    .shippingNoticeCollapsibleIcon[data-state='open'] {
+      transform: rotate(315deg);
+    }
+  }
+}
+
+.buttonCta {
+  cursor: pointer;
+  height: 60px;
+  border-radius: 30px;
+  font-size: var(--text-base);
+  border: none;
+  background-color: #111;
+  color: #fff;
+
+  &.outlined {
+    border: 1px solid #111;
+    background-color: transparent;
+    color: var(--color-text);
+  }
+}
+
+@media (width <= 960px) {
+  .productDetailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 0;
+
+    .productDetailHeader {
+      display: flex;
+    }
+
+    .productDetailData {
+      width: auto;
+      padding: 0 24px;
+
+      .productDetailHeader {
+        display: none;
+      }
+    }
+    .productDetailContent {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .productDetailHeader {
+      padding: 0 24px;
+    }
+  }
+}

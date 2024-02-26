@@ -1,0 +1,30 @@
+.sizeSelector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .sizeSelectorHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sizeSelectorHeaderSizeGuide {
+    color: #707072;
+  }
+  .sizeSelectorGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 7px;
+  }
+  .sizeSelectorSize {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-radius: 4px;
+    box-shadow: rgb(229, 229, 229) 0px 0px 0px 1px;
+  }
+  .sizeSelectorSize[data-state='selected'] {
+    box-shadow: rgb(17, 17, 17) 0px 0px 0px 1px inset;
+  }
+}

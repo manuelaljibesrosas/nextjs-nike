@@ -22,7 +22,7 @@ export const resourcesMenu = [
 export const helpMenu = [
   { label: 'Get Help', path: '/' },
   { label: 'Order Status', path: '/' },
-  { label: 'Shipping & Delivery', path: '/' },
+  { label: 'Shipping and Delivery', path: '/' },
   { label: 'Returns', path: '/' },
   { label: 'Order Cancellation', path: '/' },
   { label: 'Payment Options', path: '/' },
@@ -38,4 +38,13 @@ export const companyMenu = [
   { label: 'Investors', path: '/' },
   { label: 'Purpose', path: '/' },
   { label: 'Sustainability', path: '/' },
+]
+
+/** Footer company menu */
+export const promotionsMenu = [
+  { label: 'Student', path: '/' },
+  { label: 'Military', path: '/' },
+  { label: 'Teacher', path: '/' },
+  { label: 'First Responders & Medical Professionals', path: '/' },
+  { label: 'Birthday', path: '/' },
 ]

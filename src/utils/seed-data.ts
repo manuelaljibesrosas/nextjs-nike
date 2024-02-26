@@ -1,4 +1,4 @@
-interface Product {
+export interface Product {
   /** Unique id */
   id: number
   /** Product name */
@@ -55,7 +55,7 @@ export const mainProduct: Product = {
   colorVariants: 1,
   price: 210,
   slug: 'air-jordan-3-retro-craft-ivory',
-  image: '/aj3-ivory.png',
+  image: '/aj3-ivory-detail.jpeg',
   description:
     'Clean and supreme, the AJ3 returns. Pairing a smooth Ivory base with Grey Mist suede overlays and translucent accents on the heel tab and sole, this crafted edition ups the texture. It has dual branding on the heel and double Jumpman logos on the tongue—because twice the Jumpman is twice as nice.',
   availableSizes: [
@@ -92,7 +92,7 @@ export const products: Product[] = [
     colorVariants: 1,
     price: 180,
     tags: ['Coming Soon'],
-    image: 'aj1-high.png',
+    image: '/aj1-high.png',
     slug: 'air-jordan-3-retro-craft-ivory',
   },
   {
@@ -105,7 +105,16 @@ export const products: Product[] = [
     image: '/aj13-retro.png',
     slug: 'air-jordan-3-retro-craft-ivory',
   },
-  mainProduct,
+  {
+    id: 4,
+    name: 'Air Jordan 3 Retro Craft "Ivory"',
+    category: "Men's Shoes",
+    colorVariants: 1,
+    price: 210,
+    tags: ['Best Seller'],
+    image: '/aj3-ivory.png',
+    slug: 'air-jordan-3-retro-craft-ivory',
+  },
   {
     id: 5,
     name: 'Air Jordan 1 Mid',

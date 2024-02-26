@@ -1,0 +1,112 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-footer);
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px;
+}
+.footer-columns-wrapper {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.footer-menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: calc(100% / 4);
+}
+.footer-link-header,
+.footer-link-resources {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  color: #fff;
+}
+.footer-link-resources {
+  height: 32px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  font-size: var(--text-xs);
+  color: #7e7e7e;
+}
+.footer-link:hover {
+  font-weight: var(--font-medium);
+  color: #fff;
+}
+.social-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  justify-content: end;
+  min-width: 25%;
+  gap: 16px;
+}
+.social-link {
+  transition: background-color 120ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #7e7e7e;
+}
+.social-link:hover {
+  background-color: #fff;
+}
+.social-link-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-footer);
+}
+.collapsible-menus-group {
+  display: none;
+}
+.collapsible-trigger {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 16px;
+}
+
+@media (width < 960px) {
+  .footer-container {
+    padding: 40px 20px;
+  }
+}
+@media (width <= 600px) {
+  .collapsible-menus-group {
+    display: block;
+  }
+  .hidden-xs {
+    display: none;
+  }
+  .footer-columns-wrapper {
+    flex-direction: column;
+  }
+  .footer-menu-column {
+    width: 100%;
+    padding: 8px 15px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 6px 36px;
+  }
+  .social-links-list {
+    padding: 0 15px;
+  }
+}
